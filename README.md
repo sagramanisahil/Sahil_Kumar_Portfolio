@@ -42,7 +42,7 @@ By combining scalable algorithms, predictive insights, and automation, it delive
 ## Deployment
 
 This portfolio is deployed using GitHub Pages and is live at: 
-**https://shoaibahmedcs.github.io/Portfolio**
+**https://sahil-sagramani-portfolio.vercel.app/**
 
 You can also deploy this portfolio using platforms like Vercel, Netlify, or other static hosting services.
 
