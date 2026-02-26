@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Kumar - Data Analyst | Data Scientist | ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/jpg/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://kit.fontawesome.com/cf2c9047e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <h3>Welcome to Sahil's Portfolio</h3>
+            <p>Turning Data Into Decisions...</p>
+        </div>
+    </div>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/favicon.png" class="logo animate-bounce" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about-image" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#certifications" onclick="closemenu()">Certifications</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="fade-up" data-aos-delay="300">
+                <div class="animated-text">
+                    <p class="subtitle">
+                        <span class="highlight">Data Analyst</span> • <span class="highlight">Data Scientist</span> • <span class="highlight">ML / AI Engineer</span>
+                    </p>
+                    <h1>Hi, I'm <span class="gradient-text">Sahil Kumar</span> <br>
+                        <span class="typing-text">I turn raw data into decisions</span>
+                    </h1>
+                    <p class="description">
+                        Building data pipelines, ML models, and analytics dashboards to help your business grow smarter.
+                    </p>
+                    <div class="header-buttons">
+                        <a href="#portfolio" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="social-preview">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <h3>20+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+                        <h3>290+</h3>
+                        <p>LeetCode Problems</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                        <h3>87%</h3>
+                        <p>Accuracy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- ----------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right">
+                    <div class="about-image-container">
+                        <img src="images/Profile.jpg" alt="Sahil Kumar - Data Analyst | Data Scientist | ML Engineer">
+                        <div class="image-overlay" id="about-image">
+                            <div class="tech-icons">
+                                <i class="fab fa-python"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fas fa-brain"></i>
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile About Content - Only visible on mobile -->
+                    <div class="mobile-about-content show-mobile">
+                        <h1 class="sub-title">About <span class="gradient-text">Me</span></h1>
+                        <div class="about-description">
+                            <p class="intro-text">
+                                I'm a passionate <strong>Data Analyst</strong>, <strong>Data Scientist</strong>,
+                                and <strong>ML / AI Enthusiast</strong>
+                                who loves diving deep into raw data, building predictive models, and engineering AI-driven solutions that turn complexity into clarity.
+                            </p>
+                            <p class="mission-text">
+                               Whether you're a startup that needs customer insights from day one, a business ready to automate reporting and forecasting, or an enterprise deploying machine learning at scale — I bring the analytical depth and engineering mindset to make your data work for you.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tab-titles">
+                        <!-- Desktop Tab Links -->
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            <i class="fas fa-code"></i> Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            <i class="fas fa-briefcase"></i> Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </p>
+
+                        <!-- Mobile Dropdown -->
+                        <div class="tab-dropdown">
+                            <button class="tab-dropdown-btn" id="tabDropdownBtn">
+                                <span id="tabDropdownText">Skills</span>
+                                <span class="dropdown-arrow">▼</span>
+                            </button>
+                            <div class="tab-dropdown-menu" id="tabDropdownMenu">
+                                <div class="tab-dropdown-item active" onclick="opentab('skills')" data-tab="skills">
+                                    <i class="fas fa-code"></i>
+                                    <span>Skills</span>
+                                </div>
+                                <div class="tab-dropdown-item" onclick="opentab('experience')" data-tab="experience">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Experience</span>
+                                </div>
+                                <div class="tab-dropdown-item" onclick="opentab('education')" data-tab="education">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Education</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-grid">
+                            <!-- Languages Section -->
+                            <div class="skill-category languages">
+                                <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fab fa-python"></i>
+                                        Python
+                                    </div>
+                                    <div class="skill-description">
+                                        Core programming language for data analysis, ML modeling, and automation with extensive library ecosystem
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-database"></i>
+                                        SQL
+                                    </div>
+                                    <div class="skill-description">
+                                        Advanced SQL for data extraction, transformation, and analysis across large datasets
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fab fa-java"></i>
+                                        Java
+                                    </div>
+                                    <div class="skill-description">
+                                        Object-oriented programming, data structures, and 270+ algorithm problems solved
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-plus"></i>
+                                        C++
+                                    </div>
+                                    <div class="skill-description">
+                                        Low-level programming, competitive programming, and algorithm optimization
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fab fa-html5"></i>
+                                        HTML/CSS/JavaScript/React.js/Next.js
+                                    </div>
+                                    <div class="skill-description">
+                                        Web development fundamentals for creating interactive dashboards and web applications
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tools Section -->
+                            <div class="skill-category tools">
+                                <h4><i class="fas fa-tools"></i> Tools & Platforms</h4>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-chart-bar"></i>
+                                        Power BI & Tableau
+                                    </div>
+                                    <div class="skill-description">
+                                        Interactive dashboards and data visualizations for business intelligence and reporting
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fab fa-python"></i>
+                                        Jupyter Notebook
+                                    </div>
+                                    <div class="skill-description">
+                                        Interactive computational environment for data analysis, visualization, and documentation
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-cloud"></i>
+                                        Google Colab
+                                    </div>
+                                    <div class="skill-description">
+                                        Cloud-based Jupyter notebook for ML experiments with GPU/TPU acceleration
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fab fa-git-alt"></i>
+                                        Git & GitHub
+                                    </div>
+                                    <div class="skill-description">
+                                        Version control, collaborative repositories, and open-source project management
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-code"></i>
+                                        Visual Studio
+                                    </div>
+                                    <div class="skill-description">
+                                        Integrated development environments for coding, debugging, and project management
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-table"></i>
+                                        Excel & Google Sheets
+                                    </div>
+                                    <div class="skill-description">
+                                        Advanced Excel with pivot tables, slicers, and data dashboards for analysis
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Frameworks & Libraries Section -->
+                            <div class="skill-category frameworks">
+                                <h4><i class="fas fa-cube"></i> Frameworks & Libraries</h4>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fab fa-python"></i>
+                                        Data Manipulation
+                                    </div>
+                                    <div class="skill-description">
+                                        Pandas, NumPy, Polars for efficient data loading, cleaning, and transformation
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-chart-line"></i>
+                                        Data Visualization
+                                    </div>
+                                    <div class="skill-description">
+                                        Matplotlib, Seaborn, Plotly, ggplot for creating beautiful and interactive visualizations
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-brain"></i>
+                                        Machine Learning
+                                    </div>
+                                    <div class="skill-description">
+                                        Scikit-learn, TensorFlow, PyTorch, Keras, XGBoost for building and training ML models
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-image"></i>
+                                        Image Processing
+                                    </div>
+                                    <div class="skill-description">
+                                        OpenCV, Pillow for image manipulation, computer vision, and image enhancement tasks
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-network-wired"></i>
+                                        Statistical Analysis
+                                    </div>
+                                    <div class="skill-description">
+                                        SciPy, StatsModels for statistical testing, hypothesis testing, and statistical modeling
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-flask-vial"></i>
+                                        Feature Engineering
+                                    </div>
+                                    <div class="skill-description">
+                                        Feature-engine, Category Encoders for advanced feature transformation and selection
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Algorithms & Models Section -->
+                            <div class="skill-category algorithms">
+                                <h4><i class="fas fa-cogs"></i> Algorithms & ML Models</h4>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-code-branch"></i>
+                                        Classification Models
+                                    </div>
+                                    <div class="skill-description">
+                                        Logistic Regression, Decision Trees, Random Forest, SVM, Naive Bayes, Gradient Boosting
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-chart-scatter"></i>
+                                        Regression Models
+                                    </div>
+                                    <div class="skill-description">
+                                        Linear Regression, Ridge, Lasso, Polynomial Regression, Multiple Regression
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-sitemap"></i>
+                                        Clustering Algorithms
+                                    </div>
+                                    <div class="skill-description">
+                                        K-Means, Hierarchical Clustering, DBSCAN, Gaussian Mixture Models for unsupervised learning
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-check-circle"></i>
+                                        Model Evaluation
+                                    </div>
+                                    <div class="skill-description">
+                                        Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix, Cross-Validation
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">
+                                        <i class="fas fa-cog"></i>
+                                        EDA & Feature Engineering
+                                    </div>
+                                    <div class="skill-description">
+                                        Data cleaning, missing value imputation, outlier detection, correlation analysis, feature selection
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Data Analyst (Freelance)</h4>
+                                    <span class="company">Fiverr</span>
+                                    <span class="duration">Aug 2024 – Present</span>
+                                    <p>Delivered 20+ freelance analytics projects, automating data cleaning and analysis workflows with Python and SQL, reducing client reporting time by 40%. Designed interactive dashboards in Power BI/Tableau for clients across 5+ industries.</p>
+                                    <div class="achievements">
+                                        <span class="achievement-tag">Python</span>
+                                        <span class="achievement-tag">SQL</span>
+                                        <span class="achievement-tag">Power BI</span>
+                                        <span class="achievement-tag">Tableau</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Data Analytics Virtual Intern</h4>
+                                    <span class="company">Deloitte Australia (Job Simulation)</span>
+                                    <span class="duration">Oct 2025</span>
+                                    <p>Completed Deloitte's data analytics and forensic technology job simulation. Created a Tableau dashboard to visualize analytical findings. Used Excel to classify datasets and draw key business conclusions.</p>
+                                    <div class="achievements">
+                                        <span class="achievement-tag">Tableau</span>
+                                        <span class="achievement-tag">Excel</span>
+                                        <span class="achievement-tag">Forensic Analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Active Member – CS Society</h4>
+                                    <span class="company">Computer Science Society, Sukkur IBA University</span>
+                                    <span class="duration">Nov 2024 – Present</span>
+                                    <p>Organized 3+ hackathons and tech seminars, increasing student participation by 50%. Collaborated with 20+ team members to run coding competitions, fostering a culture of innovation and problem-solving.</p>
+                                    <div class="achievements">
+                                        <span class="achievement-tag">Event Management</span>
+                                        <span class="achievement-tag">Hackathons</span>
+                                        <span class="achievement-tag">Community Building</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <div class="education-grid">
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <p class="institution">Sukkur IBA University</p>
+                                    <span class="duration">Aug 2023 – Aug 2027 | CGPA: 3.35</span>
+                                    <div class="education-highlights">
+                                        <span class="highlight-tag">Programming Fundamentals</span>
+                                        <span class="highlight-tag">OOP</span>
+                                        <span class="highlight-tag">Data Structures</span>
+                                        <span class="highlight-tag">Database Systems</span>
+                                        <span class="highlight-tag">Data Science</span>
+                                        <span class="highlight-tag">Web Engineering</span>
+                                        <span class="highlight-tag">Machine Learning</span>
+                                        <span class="highlight-tag">Artificial Intelligence</span>
+                                        <span class="highlight-tag">Information Security</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="education-details">
+                                    <h4>Key Achievements</h4>
+                                    <p class="institution">Academic & Competitive</p>
+                                    <span class="duration">2023 – Present</span>
+                                    <div class="education-highlights">
+                                        <span class="highlight-tag">Merit Scholarship – Govt. of Sindh (2023)</span>
+                                        <span class="highlight-tag">🏆 Hackathon Winner – Sukkur IBA (2025)</span>
+                                        <span class="highlight-tag">290+ LeetCode Problems Solved</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about-col-2" data-aos="fade-left">
+                    <h1 class="sub-title">About <span class="gradient-text">Me</span></h1>
+                    <div class="about-description">
+                        <p class="intro-text">
+                            I'm a passionate <strong>Data Analyst</strong>, <strong>Data Scientist</strong>, and
+                            <strong>ML / AI Enthusiast</strong>
+                            who loves turning complex data into simple, beautiful, and actionable insights.
+                        </p>
+                        <p class="mission-text">
+                            Whether you're a startup wanting to understand your customers, a business needing interactive
+                            dashboards, or an enterprise requiring predictive models, I help you achieve your goals with
+                            cutting-edge data science and analytical storytelling.
+                        </p>
+                    </div>
+
+                    <!-- Quick Stats Section -->
+                    <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>20+</h3>
+                                <p>Projects</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>5+</h3>
+                                <p>Industries Served</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>290+</h3>
+                                <p>LeetCode Problems</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>3.35</h3>
+                                <p>University CGPA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Section -->
+                    <div class="expertise-section" data-aos="fade-up" data-aos-delay="300">
+                        <h3>What I Do Best</h3>
+                        <div class="expertise-highlight">
+                            <div class="expertise-item" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h4>Data That Speaks</h4>
+                                <p>Turning raw data into interactive dashboards & actionable insights</p>
+                            </div>
+                            <div class="expertise-item" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>Models That Predict</h4>
+                                <p>Building ML models that forecast outcomes and drive decisions</p>
+                            </div>
+                            <div class="expertise-item" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4>Queries That Deliver</h4>
+                                <p>Extracting meaningful patterns from complex SQL databases</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="motivation-section" data-aos="fade-up" data-aos-delay="300">
+                        <h3>What Drives Me</h3>
+                        <div class="motivation-grid">
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="motivation-content">
+                                    <h4>Curiosity</h4>
+                                    <p>Always exploring new datasets, algorithms, and data stories to uncover hidden insights.</p>
+                                </div>
+                            </div>
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="motivation-content">
+                                    <h4>Impact</h4>
+                                    <p>Creating analyses and models that create measurable, real-world business value.</p>
+                                </div>
+                            </div>
+                            <div class="motivation-item">
+                                <div class="motivation-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="motivation-content">
+                                    <h4>Growth</h4>
+                                    <p>Continuously learning new tools and techniques to stay ahead in data science.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----services-------- -->
+    <div id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="sub-title">How I Can <span class="gradient-text">Help You</span></h1>
+                <p class="section-subtitle">Transforming your raw data into powerful insights that drive results</p>
+            </div>
+            <div class="services-list">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h2>Data Analysis & Dashboards</h2>
+                    <p class="service-tagline">Turn your data into clear decisions</p>
+                    <div class="service-description">
+                        <p>I transform messy, raw data into clean, interactive dashboards and reports. From sales trends to customer behavior analysis, I deliver insights that drive smarter business decisions.</p>
+
+                        <div class="service-features">
+                            <h4>What You Get:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Data cleaning & preprocessing</li>
+                                <li><i class="fas fa-check"></i> Interactive Power BI / Tableau dashboards</li>
+                                <li><i class="fas fa-check"></i> Excel reports with pivot tables & slicers</li>
+                                <li><i class="fas fa-check"></i> KPI tracking & business metrics</li>
+                                <li><i class="fas fa-check"></i> Automated reporting workflows</li>
+                                <li><i class="fas fa-check"></i> Presentation-ready insights</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <a href="#contact" class="service-btn">Contact to Discuss</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-brain"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h2>Machine Learning & Predictive Models</h2>
+                    <p class="service-tagline">Predict outcomes, automate decisions</p>
+                    <div class="service-description">
+                        <p>I build end-to-end ML pipelines that predict customer churn, detect anomalies, classify data, and uncover patterns — giving your business a competitive edge powered by AI.</p>
+
+                        <div class="service-features">
+                            <h4>What You Get:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Classification & regression models</li>
+                                <li><i class="fas fa-check"></i> Feature engineering & EDA</li>
+                                <li><i class="fas fa-check"></i> Model evaluation (Accuracy, F1, ROC-AUC)</li>
+                                <li><i class="fas fa-check"></i> Scikit-learn pipelines</li>
+                                <li><i class="fas fa-check"></i> Jupyter Notebook documentation</li>
+                                <li><i class="fas fa-check"></i> Interpretable predictions for stakeholders</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-tech">
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <a href="#contact" class="service-btn">Contact to Discuss</a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h2>SQL & Data Engineering</h2>
+                    <p class="service-tagline">Query, structure, and deliver your data</p>
+                    <div class="service-description">
+                        <p>I design efficient SQL queries, data pipelines, and structured databases that help organizations manage, access, and analyze large datasets — fast and reliably.</p>
+
+                        <div class="service-features">
+                            <h4>What You Get:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Advanced SQL queries & stored procedures</li>
+                                <li><i class="fas fa-check"></i> Database schema design</li>
+                                <li><i class="fas fa-check"></i> ETL pipeline development</li>
+                                <li><i class="fas fa-check"></i> Data aggregation & reporting</li>
+                                <li><i class="fas fa-check"></i> Statistical hypothesis testing</li>
+                                <li><i class="fas fa-check"></i> Research-grade data analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Statistics</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <a href="#contact" class="service-btn">Contact to Discuss</a>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-robot"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h2>AI-Enabled Web Applications</h2>
+                    <p class="service-tagline">Integrate intelligent models into web experiences</p>
+                    <div class="service-description">
+                        <p>I build and deploy AI-powered web applications: model-backed APIs, real-time inference, chatbots, recommendation engines, and interactive visualizations that connect ML with modern web stacks.</p>
+
+                        <div class="service-features">
+                            <h4>What You Get:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Model serving & API integration (FastAPI/Flask)</li>
+                                <li><i class="fas fa-check"></i> Frontend integration (React/Vue)</li>
+                                <li><i class="fas fa-check"></i> Real-time inference & WebSockets</li>
+                                <li><i class="fas fa-check"></i> Containerization & deployment (Docker)</li>
+                                <li><i class="fas fa-check"></i> Scalable hosting (Cloud/Heroku)</li>
+                                <li><i class="fas fa-check"></i> Conversational agents & embeddings</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">HuggingFace</span>
+                        </div>
+                    </div>
+                    <div class="service-pricing">
+                        <a href="#contact" class="service-btn">Contact to Discuss</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <div class="process-section" data-aos="fade-up" data-aos-delay="400">
+                <h3>My <span class="gradient-text">Process</span></h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Understand</h4>
+                        <p>We discuss your data, goals, and business questions</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Explore</h4>
+                        <p>I clean, explore, and understand your dataset deeply</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Analyze</h4>
+                        <p>I build models or dashboards tailored to your needs</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Deliver</h4>
+                        <p>Clear reports, visualizations, and actionable recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------certifications---------- -->
+    <div id="certifications">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="sub-title">Professional <span class="gradient-text">Certifications</span></h1>
+                <p class="section-subtitle">Validated credentials across data science, programming, and professional development</p>
+            </div>
+            <div class="certifications-grid">
+                <a href="https://drive.google.com/file/d/1VkiFtuyyO287_k28uiGQiuE5mf3C4C23/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1ep32ocU-ykj7b6kes4UqTarTgQqNxK34/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Freelancing</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1TDapYmF-w5Te3ZMjFaNWwne45LmNjcDc?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL Fundamentals</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1XGlR58sTvj21NNdFTadCQ8Ww5JRKaNyd?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analyst in SQL</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1OX5bOZm_6AGXSIl4xmrGA5G9zE7QuFW1?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Data Fundamentals</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1AkMxEsnctfnVGqk-PmKnwjJUuvCqBPok?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="cert-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Volunteer Service</h3>
+                    <p class="cert-issuer">Certificate of Recognition</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1g2kMFlNK0nV8xJot5uZaGIOAj6zyX8OW?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Associate Data Analyst</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1AkMxEsnctfnVGqk-PmKnwjJUuvCqBPok?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="cert-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Community Service</h3>
+                    <p class="cert-issuer">Certificate of Recognition</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1GCQ-YmJUBVB1G9a6E5cVkTBfTcxmFSUN/view?usp=drive_link" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cert-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Events</h3>
+                    <p class="cert-issuer">Certificate of Participation</p>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1cmtmkgditVDZ3hWiuenytZ1QPBtvYtL_?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Python Programming Fundamentals</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1HjfIr3F4RjRCrLGibC7lkz65UIiPHMbY/view?usp=drive_link" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="cert-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Deloitte Data Analytics Certificate</h3>
+                    <p class="cert-issuer">Virtual Internship Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1QrpxGUvUsIJ6VJoZvtOcsXNPHWHkjOUx/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="650">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Google Data Analytics</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1KquRdC1p0SlGXgf5xWXPjTmKjxcLhCZm/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Google Advanced Data Analytics</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1mmAoKt40aS7gcN_kJLNfvt7gk_HplXx3/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="750">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analyst in Power BI</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1odOyDF_OYbPcWm-lSy4ZmC7RG4HZ6H4O/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Data Scientist in Python</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1K0wE-wo4FY6lzPA-coz1WEdxkJYge7hG/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="850">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Associate Data Scientist in Python</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1I6aVV78ezOY2SUYql1hTUdxOQpezUVvT/view?usp=sharing" target="_blank" class="cert-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="cert-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Associate Data Engineer in SQL</h3>
+                    <p class="cert-issuer">Certificate of Completion</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="sub-title">My <span class="gradient-text">Projects</span></h1>
+                <p class="section-subtitle">Real projects, real results — see how I turn data into decisions</p>
+            </div>
+
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+                <!-- Desktop Filter Buttons -->
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="data">Data Analysis</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+
+                <!-- Mobile Dropdown -->
+                <div class="portfolio-dropdown">
+                    <button class="portfolio-dropdown-btn" id="portfolioDropdownBtn">
+                        <span id="portfolioDropdownText">All Projects</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="portfolio-dropdown-menu" id="portfolioDropdownMenu">
+                        <div class="portfolio-dropdown-item active" data-filter="all">
+                            <i class="fas fa-th-large"></i>
+                            <span>All Projects</span>
+                        </div>
+                        <div class="portfolio-dropdown-item" data-filter="ml">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="portfolio-dropdown-item" data-filter="data">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="portfolio-dropdown-item" data-filter="sql">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list">
+
+                <!-- ML Project 1 -->
+                <div class="work ml" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/Titanic.png" alt="Titanic Survival Prediction">
+                    <div class="layer">
+                        <div class="project-badge">Machine Learning</div>
+                        <h3>Titanic Survival Prediction</h3>
+                        <p class="project-subtitle">Classification Model with 87% Accuracy</p>
+                        <p class="project-description">
+                            Cleaned and engineered features from 890 passenger records using EDA, missing value imputation, and label encoding.
+                            Built Logistic Regression and Random Forest models — Random Forest achieved 87% accuracy (+5% over LR).
+                            Developed probability-based survival scoring for interpretable predictions.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Python</span>
+                            <span class="feature-tag">Pandas</span>
+                            <span class="feature-tag">Scikit-Learn</span>
+                            <span class="feature-tag">Random Forest</span>
+                            <span class="feature-tag">Logistic Regression</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">87%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">890</span>
+                                <span class="stat-label">Records</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagramanisahil/Data_Science_Projects" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL Project 1 -->
+                <div class="work sql" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/Debt.png" alt="International Debt Statistics">
+                    <div class="layer">
+                        <div class="project-badge">SQL Analysis</div>
+                        <h3>International Debt Statistics</h3>
+                        <p class="project-subtitle">Large-Scale SQL Data Analysis</p>
+                        <p class="project-description">
+                            Processed 100K+ records from the World Bank to identify key debt indicators and economic patterns.
+                            Produced structured insights used in 3 university research projects.
+                            Applied advanced SQL aggregations, filtering, and statistical summaries.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">SQL</span>
+                            <span class="feature-tag">Data Aggregation</span>
+                            <span class="feature-tag">World Bank Data</span>
+                            <span class="feature-tag">Research</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">100K+</span>
+                                <span class="stat-label">Records</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Research Uses</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagramanisahil/SQL-PROJECTS" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL Project 2 -->
+                <div class="work sql" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/img.png" alt="Students Mental Health Analysis">
+                    <div class="layer">
+                        <div class="project-badge">SQL Analysis</div>
+                        <h3>Students' Mental Health</h3>
+                        <p class="project-subtitle">Analyzing Survey Data for Wellbeing Insights</p>
+                        <p class="project-description">
+                            Analyzed survey data from 500+ students to highlight top factors affecting mental well-being.
+                            Suggested interventions that were adopted by student committees.
+                            Applied hypothesis testing and correlation analysis to draw meaningful conclusions.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">SQL</span>
+                            <span class="feature-tag">Statistics</span>
+                            <span class="feature-tag">Survey Analysis</span>
+                            <span class="feature-tag">Hypothesis Testing</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">Adopted</span>
+                                <span class="stat-label">By Committees</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagramanisahil/SQL-PROJECTS" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis Project -->
+                <div class="work data" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="images/pic.png" alt="Excel Interactive Dashboards">
+                    <div class="layer">
+                        <div class="project-badge">Data Analysis</div>
+                        <h3>Interactive Excel Dashboards</h3>
+                        <p class="project-subtitle">Business Intelligence for Non-Technical Users</p>
+                        <p class="project-description">
+                            Built 5+ interactive dashboards using Excel and Python (Pandas) with slicers, pivot tables, and dynamic charts.
+                            Improved data accessibility for non-technical stakeholders by 60%.
+                            Automated repetitive reporting tasks, saving hours of manual work each week.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Excel</span>
+                            <span class="feature-tag">Python</span>
+                            <span class="feature-tag">Pandas</span>
+                            <span class="feature-tag">Pivot Tables</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Dashboards</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">60%</span>
+                                <span class="stat-label">Better Access</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagramanisahil/Excel_Projects" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PhoneBook Managemnet System -->
+                  <div class="work ml" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="images/Phone.png" alt="PhoneBook Management System">
+                    <div class="layer">
+                        <div class="project-badge">Java / File Handling</div>
+                        <h3>PhoneBook Management System</h3>
+                        <p class="project-subtitle">Robust Record Management with Java & File Handling</p>
+                        <p class="project-description">
+                            Developed a full-featured phonebook application managing 1K+ contact records using Java and file handling.
+                            Implemented robust data storage and retrieval features with search, add, update, and delete operations.
+                            Focused on clean code architecture, usability, and performance for large record sets.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Java</span>
+                            <span class="feature-tag">File Handling</span>
+                            <span class="feature-tag">OOP</span>
+                            <span class="feature-tag">Data Structures</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">1K+</span>
+                                <span class="stat-label">Records Managed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">CRUD</span>
+                                <span class="stat-label">Full Operations</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagramanisahil/PhoneBook-Management-System" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fiverr Analytics Project
+                <div class="work data" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="images/work-5.png" alt="Fiverr Client Analytics">
+                    <div class="layer">
+                        <div class="project-badge">Data Analysis</div>
+                        <h3>Client Analytics Automation</h3>
+                        <p class="project-subtitle">Freelance Analytics — 20+ Client Projects</p>
+                        <p class="project-description">
+                            Delivered 20+ end-to-end analytics projects on Fiverr across retail, finance, healthcare, and e-commerce industries.
+                            Automated data cleaning and reporting workflows, reducing client reporting time by 40%.
+                            Designed Power BI and Tableau dashboards enabling faster, data-driven decision-making.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Power BI</span>
+                            <span class="feature-tag">Tableau</span>
+                            <span class="feature-tag">Python</span>
+                            <span class="feature-tag">SQL</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Time Saved</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.fiverr.com" target="_blank" class="project-link"><i class="fa-solid fa-external-link"></i> Fiverr</a>
+                            <a href="https://github.com/sagramanisahil" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="portfolio-cta" data-aos="fade-up" data-aos-delay="600">
+                <h3>Ready to Start Your Data Project?</h3>
+                <p>Let's discuss how I can help bring clarity to your data</p>
+                <a href="#contact" class="btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------testimonials / skills showcase ---------- -->
+    <div id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="sub-title">What <span class="gradient-text">Clients Say</span></h1>
+                <p class="section-subtitle">Don't just take my word for it — hear from satisfied clients</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Sahil delivered an exceptional analytics dashboard for our e-commerce business. His insights helped us cut reporting time by 40% and we made better decisions within weeks. Highly recommended!"</p>
+                        <div class="client-info">
+                            <img src="images/client-1.png" alt="Client">
+                            <div class="client-details">
+                                <h4>Fiverr Client</h4>
+                                <span>E-Commerce Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Outstanding work on our sales data analysis! Sahil's Power BI dashboard was professional, insightful, and delivered on time. Our team now makes decisions in hours instead of days."</p>
+                        <div class="client-info">
+                            <img src="images/client-1.png" alt="Client">
+                            <div class="client-details">
+                                <h4>Fiverr Client</h4>
+                                <span>Sales Manager, Retail Industry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The ML model Sahil built for our customer churn prediction was a game-changer. His findings helped us optimize retention strategy and reduce churn significantly. Excellent technical work!"</p>
+                        <div class="client-info">
+                            <img src="images/client-1.png" alt="Client">
+                            <div class="client-details">
+                                <h4>Fiverr Client</h4>
+                                <span>Operations Manager, SaaS Company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-navigation">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots-container">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="sub-title">Let's Work <span class="gradient-text">Together</span></h1>
+                <p class="section-subtitle">Ready to transform your data into digital reality? I'm here to help!</p>
+            </div>
+
+            <div class="row">
+                <div class="contact-col-1" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Whether you have a data project in mind, need an analytics dashboard, or just want to say hello, I'd love to hear from you. Let's discuss how we can turn your data into competitive advantage!</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Email Me</h4>
+                                    <p>sagramanisahil@gmail.com</p>
+                                    <span>I'll respond within 24 hours</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Call Me</h4>
+                                    <p>+92 349 6846904</p>
+                                    <span>Available Mon-Fri, 9AM-6PM PKT</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h4>Location</h4>
+                                    <p>Sukkur, Pakistan</p>
+                                    <span>Available for remote work worldwide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-connect">
+                            <h4>Connect With Me</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/sagramanisahil" target="_blank" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sahil-kumar-sagramani-34230337b/" target="_blank" title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://leetcode.com/u/sahil_sagramani" target="_blank" title="LeetCode">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="download-cv">
+                            <a href="assets/Sahil_Resume.pdf" download class="btn-primary" id="cv-btn">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-col-2" data-aos="fade-left">
+                    <div class="contact-form-container">
+                        <h3>Send Me a Message</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+
+                        <form name="submit-to-google-sheet" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" name="Name" id="name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" name="Email" id="email" placeholder="Enter your email address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="Subject" id="subject" placeholder="What's this about?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea name="Message" id="message" rows="6"
+                                    placeholder="Tell me about your data project, goals, and how I can help you..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary" id="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section" data-aos="fade-up" data-aos-delay="400">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>How long does a data project take?</h4>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Timelines vary by complexity. A data cleaning + dashboard project takes 3–7 days. An ML model project typically takes 1–3 weeks depending on dataset size and requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Do you provide ongoing support?</h4>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! I offer support after project delivery, plus ongoing maintenance for dashboards and models as your data evolves over time.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>What's your payment structure?</h4>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I typically work with a 50% upfront payment and 50% upon completion. For larger projects, we can discuss milestone-based payments.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>What data formats do you work with?</h4>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I work with CSV, Excel, SQL databases, JSON, and API data. I can handle messy, unstructured, or large-scale datasets and deliver clean, usable outputs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 <strong>Sahil Kumar</strong>. All rights reserved. Made with <i class="fas fa-heart" id="heart"></i> in Pakistan</p>
+        </div>
+    </div>
+
+    <!-- External JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

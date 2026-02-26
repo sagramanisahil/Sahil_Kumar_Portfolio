@@ -1,0 +1,70 @@
+Sahil Kumar
++92 3496846904 | sagramanisahil@gmail.com | Hostel 20 Near JS Bank Sukkur, Sindh Pakistan
+github.com/sagramanisahil | leetcode.com/u/sahil sagramani | linkedin.com/in/sahil-kumar-sagramani
+Profile
+Data Analyst with a proven track record of transforming raw data into actionable insights that drive business decisions. Skilled
+in Python, SQL, and data visualization tools such as Tableau and Power BI, with experience delivering end-to-end analytics
+solutions through freelance projects and academic initiatives. Strong foundation in statistics, data cleaning, and dashboard
+development, coupled with hands-on experience solving 290+ algorithm problems on LeetCode to sharpen problem-solving and
+data structure skills. Eager to leverage analytical expertise and data storytelling to optimize business processes and support
+data-driven strategies.
+Experience
+Data Analyst Aug 2024 – Present
+Fiverr Remote
+– Delivered 20+ freelance analytics projects, automating data cleaning and analysis workflows with Python and SQL, reducing client
+reporting time by 40%.
+– Designed interactive dashboards and visualizations in Power BI/Tableau, enabling faster decision-making for clients across 5+ indus-
+tries.
+– Applied statistical methods (e.g., hypothesis testing, correlation analysis) to uncover insights, leading to data-driven recommendations
+for business improvements.
+Deloitte Australia Data Analytics Job Simulation Oct 2025
+Deloitte Data Analytics Virtual Internship Remote
+– Completed Deloitte job simulation involving data analysis and forensic technology.
+– Created a data dashboard using Tableau to visualize analytical findings.
+– Used Excel to classify datasets and draw key business conclusions.
+Active Member Nov 2024 – Present
+Computer Science Society, Sukkur IBA University Sukkur, Pakistan
+– Organized 3+ hackathons and tech seminars, increasing student participation in tech events by 50%.
+– Collaborated with 20+ team members to run coding competitions, fostering a culture of innovation and problem-solving.
+Projects
+Titanic Survival Prediction | Python, Pandas, Scikit-Learn, Machine Learning ὑ7
+– Cleaned and engineered features from 890 passenger records, applying EDA, missing value imputation, label encoding, and correlation
+analysis to identify key survival indicators.
+– Built and trained Logistic Regression and Random Forest models using an 80/20 split; Random Forest achieved 87% test accuracy ,
+outperforming Logistic Regression at 82% and improving prediction consistency by +5%.
+– Developed probability-based survival scoring with confidence outputs, enabling interpretable predictions and improved model usability
+for non-technical users.
+Analyzing International Debts Statistics | SQL ὑ7
+– Processed 100K+ records to identify key debt indicators, producing insights used in 3 university research projects.
+Analyzing Students’ Mental Health | SQL ὑ7
+– Analyzed survey data from 500+ students, highlighting top factors affecting mental well-being and suggesting interventions adopted
+by student committees.
+Excel Projects | Excel, Python (Pandas) ὑ7
+– Built 5+ interactive dashboards with slicers, pivot tables, and Pandas, improving data accessibility for non-technical users by 60%.
+PhoneBook Management System | Java, File Handling ὑ7
+– Developed applications managing 1K+ records with robust data storage and retrieval features, enhancing usability and performance.
+Education
+Sukkur IBA University Aug 2023 – Aug 2027
+Bachelor of Science in Computer Science CGPA: 3.35 — Sukkur, Pakistan
+Key Achievements
+• Sindh Talent Hunt Program (2023): Awarded Merit Scholarship by Govt. of Sindh.
+• Hackathon Winner (2025): 1st place at Sukkur IBA University Hackathon.
+• Solved 270+ LeetCode Problems in DS & Algorithms, Python, Java, SQL.
+Technical Skills
+Languages: Python, SQL, C++, Java, NumPy, Pandas, Matplotlib, Seaborn
+Data & ML: Data Cleaning, EDA, Feature Engineering, Logistic Regression, Random Forest, Model Evaluation (Accuracy, F1, ROC-
+AUC), Classification, Data Visualization
+T ools: Jupyter Notebook, Excel, IntelliJ, Visual Studio, Power BI, Tableau, Git/GitHub
+Other: WordPress, SEO (On/Off Page, Technical)
+Certifications
+• WordPress ὑ7
+• Freelancing ὑ7
+• SQL Fundamentals ὑ7
+• Data Analyst in SQL ὑ7
+• Python Data Fundamentals ὑ7
+• Volunteer Service ὑ7
+• Associate Data Analyst ὑ7
+• Community Service ὑ7
+• Events ὑ7
+• Python Programming Fundamentals ὑ7
+• Deloitte Data Analytics Certificate ὑ7

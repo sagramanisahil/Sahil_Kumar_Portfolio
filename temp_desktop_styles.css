@@ -1,0 +1,110 @@
+/* =============================================================
+   DESKTOP STYLES - Consolidated Media Query (min-width: 769px)
+   ============================================================= */
+@media only screen and (min-width: 769px) {
+
+    /* About Section Desktop Layout */
+    #about .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "image content"
+            "motivation content";
+        gap: 60px 100px;
+        align-items: start;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    #about .about-col-1 {
+        grid-area: image;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 350px;
+    }
+
+    #about .about-col-2 {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-width: 500px;
+        text-align: left !important;
+    }
+
+    #about .motivation-section {
+        grid-area: motivation;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #about .about-description {
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: left !important;
+    }
+
+    #about .intro-text,
+    #about .mission-text {
+        text-align: left !important;
+    }
+
+    #about .sub-title {
+        text-align: left !important;
+    }
+
+    /* Motivation Section Desktop Styling */
+    .motivation-section {
+        margin: 30px 0 0 0;
+        padding: 30px;
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.03), rgba(16, 185, 129, 0.03));
+        border-radius: 20px;
+        border: 1px solid rgba(59, 130, 246, 0.1);
+    }
+
+    .motivation-section h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .motivation-grid {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .motivation-item {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.02);
+    }
+
+    .motivation-item:hover {
+        transform: translateX(5px) translateY(-2px);
+        background: rgba(59, 130, 246, 0.05);
+    }
+
+    /* Contact Section Desktop Layout */
+    #contact .row {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        gap: 100px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .contact-col-1 {
+        flex-basis: 48% !important;
+        width: 48% !important;
+    }
+
+    .contact-col-2 {
+        flex-basis: 48% !important;
+        width: 48% !important;
+    }
+}
