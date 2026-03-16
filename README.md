@@ -50,7 +50,7 @@ You can also deploy this portfolio using platforms like Vercel, Netlify, or othe
 
 Feel free to reach out!
 
-- Email: contact@email.com
+- Email: sagramanisahil@email.com
 - LinkedIn: [Sahil Kumar]([https://www.linkedin.com/in/sahil-kumar-sagramani-34230337b/])
 - GitHub: [sagramanisahil]([https://github.com/sagramanisahil])
 - Facebook: [Sahil Kumar Sagramani]([https://www.facebook.com/sahilkumar.sagramani)
