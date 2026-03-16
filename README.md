@@ -1,10 +1,11 @@
 # Portfolio
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a Mobile App Developer.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a Data Analyst, Data Scientist and ML/AI Engineer.
 
 ## About
 
-This portfolio is designed to highlight my work as a Mobile App Developer, Web Developer, technical expertise, and provide a way for potential employers or collaborators to get in touch. It features a responsive design and interactive elements to create an engaging user experience.
+This portfolio is designed to highlight my work as a Data Analyst, Data Scientist, AI / ML Engineer, Web developer, technical expertise, and provide a way for potential employers or collaborators to get in touch. It integrates data analysis, statistical modeling, machine learning, and artificial intelligence to transform raw data into intelligent, actionable solutions.
+By combining scalable algorithms, predictive insights, and automation, it delivers data-driven systems that enhance decision-making and real-world performance.
 
 ## Technologies Used
 
@@ -30,7 +31,7 @@ This portfolio is designed to highlight my work as a Mobile App Developer, Web D
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/shoaibahmedcs/Portfolio.git
+    git clone [https://github.com/sagramanisahil/Sahil_Kumar_Portfolio.git]
     ```
 2. Navigate to the project directory:
     ```bash
@@ -41,7 +42,7 @@ This portfolio is designed to highlight my work as a Mobile App Developer, Web D
 ## Deployment
 
 This portfolio is deployed using GitHub Pages and is live at: 
-**https://shoaibahmedcs.github.io/Portfolio**
+**https://sahil-sagramani-portfolio.vercel.app/**
 
 You can also deploy this portfolio using platforms like Vercel, Netlify, or other static hosting services.
 
@@ -50,10 +51,10 @@ You can also deploy this portfolio using platforms like Vercel, Netlify, or othe
 Feel free to reach out!
 
 - Email: contact@email.com
-- LinkedIn: [Shoaib Ahmed](https://www.linkedin.com/in/shoaib-ahmed-00a4832a8/)
-- GitHub: [shoaibahmedcs](https://github.com/shoaibahmedcs)
-- Facebook: [Shoaib Ahmed](https://www.facebook.com/profile.php?id=61554837646520)
-- Instagram: [shoaib_ahmed912](https://www.instagram.com/shoaib_ahmed912/)
+- LinkedIn: [Sahil Kumar]([https://www.linkedin.com/in/sahil-kumar-sagramani-34230337b/])
+- GitHub: [sagramanisahil]([https://github.com/sagramanisahil])
+- Facebook: [Sahil Kumar Sagramani]([https://www.facebook.com/sahilkumar.sagramani)
+- Instagram: [sagramanisahil](https://www.instagram.com/sagramanisahil/)
 
 ---
 
