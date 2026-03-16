@@ -3,12 +3,12 @@
     --primary-color: #8b5cf6; /* violet */
     --primary-hover: #7c3aed;
     --primary-light: #c4b5fd;
-    --secondary-color: #fbbf24; /* amber */
+    --secondary-color: #22d3ee; /* cyan, replaces yellow */
     --accent-color: #22d3ee; /* cyan */
-    --accent-pink: #f472b6;
+    --accent-pink: #a855f7;
 
-    --gradient-primary: linear-gradient(135deg, #8b5cf6, #22d3ee, #f472b6);
-    --gradient-secondary: linear-gradient(135deg, #22d3ee, #8b5cf6, #fbbf24);
+    --gradient-primary: linear-gradient(135deg, #8b5cf6, #22d3ee, #a855f7);
+    --gradient-secondary: linear-gradient(135deg, #22d3ee, #8b5cf6, #a855f7);
 
     /* Background / surfaces */
     --bg-dark: #060812;
@@ -54,7 +54,7 @@ body {
     background-image:
         radial-gradient(900px circle at 12% 12%, rgba(34, 211, 238, 0.12), transparent 55%),
         radial-gradient(900px circle at 88% 18%, rgba(139, 92, 246, 0.14), transparent 55%),
-        radial-gradient(900px circle at 50% 92%, rgba(244, 114, 182, 0.1), transparent 55%);
+        radial-gradient(900px circle at 50% 92%, rgba(139, 92, 246, 0.1), transparent 55%);
     color: var(--text-primary);
     overflow-x: hidden;
     min-height: 100vh;
@@ -114,8 +114,8 @@ body {
 
 .custom-cursor.hover {
     transform: translate(-50%, -50%) scale(1.5);
-    background: linear-gradient(135deg, #d4af37, #c084fc, #f472b6);
-    box-shadow: 0 0 22px rgba(251, 191, 36, 0.25), 0 0 40px rgba(244, 114, 182, 0.25);
+    background: linear-gradient(135deg, #fbbf24, #c4b5fd, #8b5cf6);
+    box-shadow: 0 0 22px rgba(251, 191, 36, 0.25), 0 0 40px rgba(139, 92, 246, 0.25);
 }
 
 .custom-cursor.dark {
@@ -127,8 +127,8 @@ body {
 
 .custom-cursor.click {
     transform: translate(-50%, -50%) scale(0.8);
-    background: linear-gradient(135deg, #9333ea, #d4af37, #f472b6);
-    box-shadow: 0 0 22px rgba(251, 191, 36, 0.25), 0 0 40px rgba(34, 211, 238, 0.22);
+    background: linear-gradient(135deg, #9333ea, #fbbf24, #8b5cf6);
+    box-shadow: 0 0 22px rgba(251, 191, 36, 0.25), 0 0 40px rgba(139, 92, 246, 0.22);
 }
 
 .custom-cursor.text {
@@ -439,7 +439,7 @@ label,
     bottom: 0;
     background: radial-gradient(circle at 30% 40%, rgba(168, 85, 247, 0.2) 0%, transparent 50%),
         radial-gradient(circle at 70% 60%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 50% 80%, rgba(244, 114, 182, 0.12) 0%, transparent 50%);
+        radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.12) 0%, transparent 50%);
     pointer-events: none;
     z-index: 1;
 }
@@ -803,7 +803,7 @@ nav ul li a:hover::after {
     bottom: 0;
     background: radial-gradient(circle at 18% 55%, rgba(34, 211, 238, 0.12) 0%, transparent 55%),
         radial-gradient(circle at 82% 25%, rgba(139, 92, 246, 0.14) 0%, transparent 55%),
-        radial-gradient(circle at 55% 80%, rgba(244, 114, 182, 0.1) 0%, transparent 60%);
+        radial-gradient(circle at 55% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -1088,7 +1088,7 @@ nav ul li a:hover::after {
 
 /* Motivation Section - Positioned under image on desktop */
 .motivation-section {
-    margin: 40px 0;
+    margin: 30px 0 40px;
     order: 3;
 }
 
