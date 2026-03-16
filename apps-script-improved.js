@@ -1,4 +1,4 @@
-var sheetName = 'contact form';  // ✅ CHANGE THIS TO MATCH YOUR SHEET TAB NAME
+var sheetName = 'contact form';
 var scriptProp = PropertiesService.getScriptProperties();
 
 function intialSetup () {
@@ -11,7 +11,6 @@ function doPost (e) {
   lock.tryLock(10000);
 
   try {
-    // Debug: Log incoming request
     Logger.log('📨 Form submission received. Params: ' + JSON.stringify(e.parameter));
     
     var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'));
