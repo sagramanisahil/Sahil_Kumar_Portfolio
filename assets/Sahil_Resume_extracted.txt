@@ -27,22 +27,60 @@ Computer Science Society, Sukkur IBA University Sukkur, Pakistan
 – Organized 3+ hackathons and tech seminars, increasing student participation in tech events by 50%.
 – Collaborated with 20+ team members to run coding competitions, fostering a culture of innovation and problem-solving.
 Projects
-Titanic Survival Prediction | Python, Pandas, Scikit-Learn, Machine Learning ὑ7
-– Cleaned and engineered features from 890 passenger records, applying EDA, missing value imputation, label encoding, and correlation
-analysis to identify key survival indicators.
-– Built and trained Logistic Regression and Random Forest models using an 80/20 split; Random Forest achieved 87% test accuracy ,
-outperforming Logistic Regression at 82% and improving prediction consistency by +5%.
-– Developed probability-based survival scoring with confidence outputs, enabling interpretable predictions and improved model usability
-for non-technical users.
-Analyzing International Debts Statistics | SQL ὑ7
-– Processed 100K+ records to identify key debt indicators, producing insights used in 3 university research projects.
-Analyzing Students’ Mental Health | SQL ὑ7
-– Analyzed survey data from 500+ students, highlighting top factors affecting mental well-being and suggesting interventions adopted
-by student committees.
-Excel Projects | Excel, Python (Pandas) ὑ7
-– Built 5+ interactive dashboards with slicers, pivot tables, and Pandas, improving data accessibility for non-technical users by 60%.
-PhoneBook Management System | Java, File Handling ὑ7
-– Developed applications managing 1K+ records with robust data storage and retrieval features, enhancing usability and performance.
+GPA Calculator | Python  
+– Command-line tool to compute semester GPA and cumulative CGPA from course grades and credit hours.  
+– Validates inputs, handles weighted averages and prints formatted results for transcripts.  
+GitHub: https://github.com/sagramanisahil/GPA_Calculator
+
+ATM Management System | Java, Swing, JDBC, MySQL  
+– GUI application providing deposit, withdrawal, balance inquiry and transaction summaries.  
+– JDBC-backed persistence for customers and transactions ensuring durable storage and basic account management flows.  
+GitHub: https://github.com/sagramanisahil/ATM-Management-System-OOP-Project
+
+PhoneBook Management System | Java, File I/O, HashMap, Binary Search Tree  
+– Persistent contact manager using file storage and HashMap for fast lookups and BST for ordered insertions and traversals.  
+– Supports add/search/update/delete operations with efficient search and durable file-based persistence.  
+GitHub: https://github.com/sagramanisahil/PhoneBook-Management-System
+
+Titanic Survival Prediction | Python, pandas, scikit-learn (ML)  
+– End-to-end ML pipeline: data cleaning, EDA, feature engineering, model training and evaluation for survival prediction.  
+– Built classifiers and probability-based scoring to predict survival using engineered passenger features.  
+GitHub: https://github.com/sagramanisahil/Data_Science_Projects
+
+AI_Powered_Plantmedic | OpenCV, Pillow, TensorFlow/Keras (MobileNetV2), OpenAI API  
+– Image-processing and transfer-learning pipeline to classify 38 plant disease categories from 54k+ images.  
+– Integrates model predictions with OpenAI-driven treatment guidance to provide actionable advice to farmers.  
+GitHub: (repo link not provided)
+
+PowerBoosterApp | Python, GUI, Simulation  
+– GUI prototype simulating panel tilt vs. generated energy to find higher-yield angles and configurations.  
+– Visualizes energy vs. angle and proposes placement strategies; hackathon-winning prototype.  
+GitHub: https://github.com/sagramanisahil/PowerBoosterApp
+
+Cafe Sales Data Cleaning | Python, pandas  
+– Cleaned and normalized raw cafe sales data, fixed missing values and inconsistent formats.  
+– Produced analysis-ready CSVs and reusable cleaning scripts for downstream reporting.  
+GitHub: https://github.com/sagramanisahil/Data_Cleaning_Projects
+
+SQL Analytics Collection | SQL (Postgres/MySQL/SQLite)  
+– Wrote analytic SQL queries for international debt, student mental health and NGO impact datasets to extract KPIs and insights.  
+– Implemented joins, aggregations, window functions and indexing for performance.  
+GitHub: https://github.com/sagramanisahil/SQL-PROJECTS
+
+Chat Application (Java) | Java, Sockets, Swing GUI  
+– Socket-based server and GUI clients enabling real-time messaging and basic concurrency.  
+– Demonstrated client-server communication, threading and connection management for multi-client chat.  
+GitHub: https://github.com/sagramanisahil/ChatApplication
+
+Excel Projects Collection | Excel, Python (Pandas)  
+– Built spreadsheet dashboards and used advanced formulas (XLOOKUP/VLOOKUP), conditional formatting and charts for analysis.  
+– Transformed raw datasets into interactive reports and visualizations for business use.  
+GitHub: https://github.com/sagramanisahil/Excel_Projects
+
+Real-time Chat (Web & Mobile) | React, React Native, Firebase/Realtime backend  
+– Full-stack real-time messaging with web and mobile clients, synchronized message state and low-latency updates.  
+– Implements authentication, message persistence and cross-platform message sync for seamless communication.  
+GitHub: (repo link not provided)
 Education
 Sukkur IBA University Aug 2023 – Aug 2027
 Bachelor of Science in Computer Science CGPA: 3.35 — Sukkur, Pakistan

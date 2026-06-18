@@ -503,6 +503,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// (Removed PDF slider — using single embedded PDF thumbnail now)
+
 // Mobile Dropdown Functionality
 document.addEventListener('DOMContentLoaded', function () {
     // About Section Tab Dropdown

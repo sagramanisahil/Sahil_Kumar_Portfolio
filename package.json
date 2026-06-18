@@ -1,0 +1,25 @@
+{
+  "name": "sahil_kumar_portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a Data Analyst, Data Scientist and ML/AI Engineer.",
+  "main": "apps-script-improved.js",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagramanisahil/Sahil_Kumar_Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sagramanisahil/Sahil_Kumar_Portfolio/issues"
+  },
+  "homepage": "https://github.com/sagramanisahil/Sahil_Kumar_Portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
